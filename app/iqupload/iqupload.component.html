@@ -1,0 +1,118 @@
+
+<!-- <div style="background-color: #03e9f4;">
+   
+    <div class="login-box" style="background-color:#4B4BA3; ">
+      <form #interviewForm="ngForm" class="form-group" (ngSubmit)="register()">
+         <div class="user-box">
+          <input type="text" [(ngModel)]='interview.companyName' name="companyName" id="companyName" required>
+          <label>Company Name</label>
+        </div>  -->
+        <!-- <label>Company Name</label>
+        <div class="user-box">
+          
+        <select name="companyName" [(ngModel)]='interview.companyName' name="companyName" id="companyName" placeholder="companyName" required>
+          
+          <option>TalentSprint</option>
+          <option>Caterpillar</option>
+          <option>Expedia</option>
+          <option>Google</option>
+          <option>IBM</option>
+          <option>Infosys</option>
+          <option>Flipkart</option>
+          <option>Capgemini</option>
+          <option>Amazon</option>
+      </select></div> -->
+        <!-- <div class="user-box">
+          <input type="text" name="questionName" [(ngModel)]='interview.questionName' required>
+          <label>Question Name</label>
+        </div> -->
+  
+        <!-- <div class="user-box">
+          <input type="text-area" name="description" [(ngModel)]='interview.description' required >
+          <label>Description</label>
+        </div> -->
+  
+        <!-- <div class="user-box">
+          <input type="text-area" name="testCases" [(ngModel)]='interview.testCases' required>
+          <label>Test Cases</label>
+        </div> -->
+  
+        <!-- <div class="user-box">
+          <input type="text-area" >
+          <label>TestCases</label>
+        </div>
+   -->
+        <!-- <div class="user-box">
+          <input type="text-area" name="explanation" [(ngModel)]='interview.explanation' required>
+          <label>Explanation</label>
+        </div> -->
+     
+        <!-- <button type="submit" class="btn btn-primary">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Upload Question
+        </button>
+      </form>
+    </div>
+    </div> -->
+    
+    <!--form #imageForm="ngForm" class="form-group" (ngSubmit)="OnSubmit(imageForm.value)"-->
+        <!--Type:<input type="text" #type ngModel name="type" ><br/><br/-->
+       
+        <!--div class="col"-->
+          <!--div class="input-field col s12">
+            <input type="text" #itemName ngModel name="itemName" id="itemName" required>
+            <label for="itemName">Item Name</label>
+          </div-->
+          <!--div class="input-field col s12">
+            <input type="text" #reg ngModel name="itemName" id="itemName" required>
+          </div-->
+         
+          <!--div class="input-field col s12">
+            <input type="text" #itemDescription ngModel name="itemDescription" id="itemDescription" required>
+            <label for="itemDescription">Description</label>
+          </div-->
+        <!--/div>
+        <div-->
+            <!--img [src]="imageUrl" style="width:250px;height:200px;margin-left: 10px;margin-right: 10px;"-->
+            <!--input type="file" #File accept="itemImage/*" (change)="handleFileInput($event.target.files)">
+            <button type="submit">Upload</button>
+        </div>
+    </form-->
+
+    <div class="col-sm-3">
+  
+      <app-home></app-home></div>
+    <br/>
+    <br/><br/>
+    
+    <div class="col-sm-9" style="margin-left: 300px; margin-top: 0px;">
+    <div class="container" id="container">
+      <div class="form-container sign-in-container">
+        <form #interviewForm="ngForm" class="form-group" (ngSubmit)="register()">
+          <h3>INTERVIEW QUESTIONS</h3>
+          <!-- <input type="text"ngModel #subject="ngModel" id="subject" name="subject" placeholder="Write your Suggestion.."/> -->
+          <input type="text" [(ngModel)]='interview.companyName' name="companyName" id="companyName" placeholder="Company Name" required>
+          <input type="text" name="questionName" [(ngModel)]='interview.questionName' id="questionName" placeholder="Question Name" required>
+          <input type="text-area" name="description" [(ngModel)]='interview.description' id="description" placeholder="Description" required >
+          <input type="text-area" name="testCases" [(ngModel)]='interview.testCases' id="testCases" placeholder="TestCases" required>
+          <input type="text-area" name="explanation" [(ngModel)]='interview.explanation' id="explanation" placeholder="Explanation" required>
+
+
+          <button type="submit">Upload</button>
+        </form>
+      </div>
+       <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <p><img class=" img-fluid" src="./assets/images/interview.jpg" height="400px" width="400px" alt="card image"></p>
+            
+    </div>
+    </div>
+    </div> 
+    </div>

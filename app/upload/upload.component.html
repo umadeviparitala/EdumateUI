@@ -1,0 +1,80 @@
+<!-- <app-home></app-home>
+<div style="background-color: #03e9f4;">
+   
+  <div class="login-box" style="background-color: black;">
+    <form #imageForm="ngForm" class="form-group" (ngSubmit)="OnSubmit(imageForm.value)">
+      <div class="user-box">
+        <input type="text" #reg ngModel name="itemName" id="itemName" required>
+        <label>Type</label>
+      </div>
+      <div class="user-box">
+        <input type="file" #File accept="itemImage/*" (change)="handleFileInput($event.target.files)">
+        <label>Select a File</label>
+      </div>
+   
+      <button type="submit" class="btn btn-primary">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Upload
+      </button>
+    </form>
+  </div>
+  </div> -->
+  
+  <!--form #imageForm="ngForm" class="form-group" (ngSubmit)="OnSubmit(imageForm.value)"-->
+      <!--Type:<input type="text" #type ngModel name="type" ><br/><br/-->
+     
+      <!--div class="col"-->
+        <!--div class="input-field col s12">
+          <input type="text" #itemName ngModel name="itemName" id="itemName" required>
+          <label for="itemName">Item Name</label>
+        </div-->
+        <!--div class="input-field col s12">
+          <input type="text" #reg ngModel name="itemName" id="itemName" required>
+        </div-->
+       
+        <!--div class="input-field col s12">
+          <input type="text" #itemDescription ngModel name="itemDescription" id="itemDescription" required>
+          <label for="itemDescription">Description</label>
+        </div-->
+      <!--/div>
+      <div-->
+          <!--img [src]="imageUrl" style="width:250px;height:200px;margin-left: 10px;margin-right: 10px;"-->
+          <!--input type="file" #File accept="itemImage/*" (change)="handleFileInput($event.target.files)">
+          <button type="submit">Upload</button>
+      </div>
+  </form-->
+
+  <div class="col-sm-3">
+  
+    <app-home></app-home></div>
+  <br/>
+  <br/><br/>
+  
+  <div class="col-sm-9" style="margin-left: 300px; margin-top: 0px;">
+  <div class="container" id="container">
+    <div class="form-container sign-in-container">
+      <form #imageForm="ngForm" class="form-group" (ngSubmit)="OnSubmit(imageForm.value)">
+        <h1>REGULATION</h1>
+        <input type="text" #reg ngModel name="itemName" id="itemName" placeholder="Regulation type" required>
+        <input type="file" #File accept="itemImage/*" (change)="handleFileInput($event.target.files)">
+        <!-- <input type="text"ngModel #subject="ngModel" id="subject" name="subject" placeholder="Write your Suggestion.."/> -->
+              <!-- <input type="text" [(ngModel)]="tasks.date" placeholder="Date" name="date" />
+              <input type="text" [(ngModel)]="tasks.time" name="time" placeholder="Time" /> -->
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+     <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <p><img class=" img-fluid" src="./assets/images/regulation.jpg" height="100%" width="200%" alt="card image"></p>
+          
+  </div>
+  </div>
+  </div> 
+  </div>

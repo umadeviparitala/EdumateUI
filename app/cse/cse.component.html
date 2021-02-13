@@ -1,0 +1,84 @@
+<!-- <app-main></app-main>
+
+<div class="container">
+    <div class="row">
+         <div class="col-md-2"></div>
+    
+        <h2 class="uppercase">{{dept}}</h2><br/>
+    <div *ngFor='let book of displayBooks'>
+    <div *ngIf="book.dep == dept" class="col-md-4 id">
+    <div class="card" style="width: 250px;">                                                                                                                                                                                                                  
+        <img src="http://localhost:8080/Edumate_RESTAPI/image/{{book.img}}" style="width:100%">
+        <div class="container">
+            <h6><b>Book Name: </b>{{book.bname}}</h6>
+            <hr>
+            <h6><b>Author Name: </b>{{book.aname}}</h6>
+            <hr>
+            <h6><b>Description: </b>{{book.bdec}}</h6>
+            <hr>
+            <a target="_blank" href="http://localhost:8080/Edumate_RESTAPI/image/{{book.pdf}}">click here</a>
+        </div>
+    </div>
+    </div>
+
+
+</div>
+</div>
+</div> -->
+
+
+
+<app-main></app-main>
+<!-- <app-main></app-main> -->
+<br/>
+<div class="container">
+    <h2 class="uppercase" style="margin-left: 500px;">{{dept}}</h2>
+<div *ngFor='let book of displayBooks' class="col-md-8 id" style="margin-left: 330px;">
+    <div class="row">
+        
+         <div class="col-md-3"></div>
+    <!--<div class="col-md-10"> -->
+        
+    
+    <div *ngIf="book.dep == dept" style="width: 1400px;">
+        <!-- <div class="col-md-8 id"> -->
+    <!-- <div class="card" style="width: 250px;">                                                                                                                                                                                                                  
+        <img src="http://localhost:8080/Edumate_RESTAPI/image/{{book.img}}" style="width:100%">
+        <div class="container">
+            <h6><b>Book Name: </b>{{book.bname}}</h6>
+            <hr>
+            <h6><b>Author Name: </b>{{book.aname}}</h6>
+            <hr>
+            <h6><b>Description: </b>{{book.bdec}}</h6>
+            <hr>
+            <a target="_blank" href="http://localhost:8080/Edumate_RESTAPI/image/{{book.pdf}}">click here</a>
+        </div>
+    </div> -->
+    
+        
+                <div class="card" style="background-color: white;box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+                0 10px 10px rgba(0,0,0,0.22);">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <!-- <img class="" src="http://localhost:8080/Edumate_RESTAPI/image/{{book.img}}/200x120" alt="Card image cap"> -->
+                            <img src="http://localhost:8080/Edumate_RESTAPI/image/{{book.img}}" style="width: 200px; height: 120px;">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: #4B4BA3
+                            ;">{{book.bname}}</h3>
+                            <p class="card-text">{{book.bdec}}<sub>&nbsp;&nbsp;<strong style="color: #4B4BA3
+                                ;">Written By {{book.aname}}</strong></sub></p>
+                        </div>
+                        <a target="_blank" href="http://localhost:8080/Edumate_RESTAPI/image/{{book.pdf}}" class="btn btn-primary" style="background-color:#4B4BA3;height: 40px;width: 170px;color: white;margin-top: 30px;margin-right: 20px;border-radius: 20%;align-items: center;">&nbsp;&nbsp;Click Here</a>
+                    </div>
+                    
+                <!-- </div> -->
+        </div>
+    </div>
+    
+<!-- </div> -->
+</div>
+</div>
+
+</div>
+    

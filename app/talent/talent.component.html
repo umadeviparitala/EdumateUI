@@ -1,0 +1,88 @@
+
+<div class="modal" id="editPopup">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <!-- <h4 class="modal-title">Update</h4> -->
+          </div>
+          <div class="modal-body">
+                  <!-- Enter Event: <input type="text" name="event" [(ngModel)]="updateObj.event" class="form-control"><br/>
+                  Enter Date: <input type="text" name="date" [(ngModel)]="updateObj.date" class="form-control"><br/>
+                  Enter Time: <input type="text" name="time" [(ngModel)]="updateObj.time" class="form-control"><br/>
+                   -->
+                  <h3>Question Name</h3>
+                  <h6>{{updateObj.questionName}}</h6><br><hr>
+                  <h3>Description</h3>
+                  <h6>{{updateObj.description}}</h6>  <br><hr>
+                  <h3>Test Cases</h3>
+                  <h6>{{updateObj.testCases}}</h6><br><hr>
+                  <h3>Explanation</h3>
+                  <h6>{{updateObj.explanation}}</h6><br>
+                  
+                  <!-- <h1>Question Description</h1>
+                  <h1>{{updateObj.description}}</h1> -->
+
+          </div>
+          <div class="modal-footer">
+              <!-- <button type="button" (click)="updateTask()" class="close" data-dismiss="modal" class="btn btn-succes">Update</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-sm-3"><app-main></app-main></div>
+<br/>
+
+
+<div class="col-sm-9" style="margin-left: 300px; margin-top: 0px;">
+<div class="container" id="container">
+  <h2>{{company}}</h2>
+  <br/>
+  <div class="row">
+  <div *ngFor='let question of displayq.reverse()' class="col-md-6 id">
+    <div *ngIf="question.companyName == company">
+  <div class="card">
+    <!--img src="img_avatar.png" alt="Avatar" style="width:100%"-->
+    <div class="container">
+     
+      <h3><b>{{question.questionName}}</b></h3> 
+      <div><button class="btn btn-primary"  (click)="editTask(question)">show question</button></div>
+      <br><br>
+    </div>
+  </div></div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<!-- 
+<app-main></app-main>
+
+    <div class="row">
+         <div class="col-md-2"></div>
+    
+        
+    <div *ngFor='let book of displayBooks'>
+    <div *ngIf="book.dep == 'mech'" class="col-md-4 id">
+    <div class="card" style="width: 250px;">                                                                                                                                                                                                                  
+        <img src="http://localhost:8080/Edumate_RESTAPI/image/{{book.img}}" style="width:100%">
+        <div class="container">
+            <h6><b>Book Name: </b>{{book.bname}}</h6>
+            <hr>
+            <h6><b>Author Name: </b>{{book.aname}}</h6>
+            <hr>
+            <h6><b>Description: </b>{{book.bdec}}</h6>
+            <hr>
+            <a target="_blank" href="http://localhost:8080/Edumate_RESTAPI/image/{{book.pdf}}">click here</a>
+        </div>
+    </div>
+    </div>
+
+
+</div>
+</div>
+     -->

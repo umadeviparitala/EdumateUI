@@ -1,0 +1,108 @@
+
+<!-- <div style="background-color: #03e9f4;">
+   
+  <div class="login-box" style="background-color: black;">
+    <form #imageForm="ngForm" class="form-group" (ngSubmit)="OnSubmit(imageForm.value)">
+      <div class="user-box">
+        <input type="text" #reg ngModel name="depName"  required>
+        <label>dep</label>
+      </div>
+      <div class="user-box">
+          <input type="text" #reg ngModel name="bookName" required>
+          <label>book</label>
+        </div>
+        <div class="user-box">
+          <input type="text" #reg ngModel name="bookdecs"  required>
+          <label>desc</label>
+        </div>
+        <div class="user-box">
+          <input type="text" #reg ngModel name="aname"  required>
+          <label>Author name</label>
+        </div>
+      <div class="user-box">
+        <input type="file" #image accept="itemImage/*" (change)="handleFileInput($event.target.files)">
+        <label>Select a image</label>
+      </div>
+      <div class="user-box">
+          <input type="file" #File accept="pdf/*" (change)="handleFileInpt($event.target.files)">
+          <label>Select a File</label>
+        </div>
+     
+      <button type="submit" class="btn btn-primary">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Upload
+      </button>
+    </form>
+  </div>
+  </div> -->
+
+   <div class="col-sm-3">
+  
+    <app-home></app-home></div>
+  <br/>
+  <br/><br/>
+  
+  <div class="col-md-9" style="margin-left: 300px; margin-top: 0px;">
+  <div class="container" id="container">
+    <div class="form-container sign-in-container">
+      <form #imageForm="ngForm" class="form-group" (ngSubmit)="OnSubmit(imageForm.value)">
+        <h3>E-BOOKS</h3>
+         <!-- <input type="text"ngModel #subject="ngModel" id="subject" name="subject" placeholder="Write your Suggestion.."/>  -->
+        <input type="text" #reg ngModel name="depName" id="depName" placeholder="Department" required>
+        <input type="text" #reg ngModel name="bookName" id="bookName" placeholder="Book Name" required>
+        <input type="text" #reg ngModel name="bookdecs" id="bookdecs" placeholder="Book Description" required>
+        <input type="text" #reg ngModel name="aname" id="aname" placeholder="Author Name" required>
+        <h6 style="margin-left: -330px; font-size: small;">Book Image</h6>
+        <input type="file" #image accept="itemImage/*" (change)="handleFileInput($event.target.files)">
+        <h6 style="margin-left: -350px; font-size: small;">Book Pdf</h6>
+        <input type="file" #File accept="pdf/*" (change)="handleFileInpt($event.target.files)">
+               <!-- <input type="text" [(ngModel)]="tasks.date" placeholder="Date" name="date" />
+              <input type="text" [(ngModel)]="tasks.time" name="time" placeholder="Time" />  -->
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+     <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <p><img class=" img-fluid" src="./assets/images/ebook.jpg" height="100%" width="200%" alt="card image"></p>
+          
+  </div>
+  </div>
+  </div> 
+  </div> 
+<!-- 
+  <div class="col-sm-3">
+  
+    <app-main></app-main></div>
+  <br/>
+  <br/><br/>
+  
+  <div class="col-sm-9" style="margin-left: 300px; margin-top: 0px;">
+  <div class="container" id="container">
+    <div class="form-container sign-in-container">
+      <form #sForm="ngForm" (ngSubmit)="feedSubmit(sForm.value)">
+        <h1>SUGGESTION</h1>
+        <input type="text"ngModel #subject="ngModel" id="subject" name="subject" placeholder="Write your Suggestion.."/>
+               <input type="text" [(ngModel)]="tasks.date" placeholder="Date" name="date" />
+              <input type="text" [(ngModel)]="tasks.time" name="time" placeholder="Time" /> 
+        <button type="submit">Send</button>
+      </form>
+    </div>
+     <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <p><img class=" img-fluid" src="./assets/images/comment.jpg" height="100%" width="200%" alt="card image"></p>
+          
+  </div>
+  </div>
+  </div> 
+  </div> -->

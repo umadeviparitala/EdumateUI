@@ -1,0 +1,124 @@
+
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css">
+<link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Verdana&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+<div class="col-sm-3"><app-home></app-home></div>
+<br/>
+<div class="container">
+
+<div class="col-sm-9" style="margin-left: 300px; margin-top: 0px;">
+    
+        <div class="col-md-12">
+          <div class="row">
+        <div class="col-xl-3 col-sm-6 col-12"> 
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="align-self-center">
+                    <i class="fa fa-users primary font-large-2 float-left"></i>
+                  </div>
+                  <div class="media-body text-right">
+                    <h3>{{count4}}</h3>
+                    <span>No.of users</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="align-self-center">
+                    <i class="fa fa-book warning font-large-2 float-left"></i>
+                  </div>
+                  <div class="media-body text-right">
+                    <h3>{{count1}}</h3>
+                    <span>E-Books</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="align-self-center">
+                    <i class="fa fa-file success font-large-2 float-left"></i>
+                  </div>
+                  <div class="media-body text-right">
+                    <h3>{{count2}}</h3>
+                    <span>Files Uploaded</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="media d-flex">
+                  <div class="align-self-center">
+                    <i class="fa fa-briefcase danger font-large-2 float-left"></i>
+                    
+                  </div>
+                  <div class="media-body text-right">
+                    <h3>{{count3}}</h3>
+                    <span>Interview Tips</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+      <h1 style="margin-left: 350px;margin-top: 200px;font-family: 'Verdana', cursive;font-size: 42px;color: #4B4BA3;">Student are ready to learn. Let's upload soemthing new.</h1>
+      </div>
+       <div class="col-md-4">
+      <img src="https://preview.colorlib.com/theme/eclipse/img/header-img.png" style="margin-top:50px;">
+      </div>
+      </div>
+    </div>
+
+
+    <!-- <animated-digit [digit]= "count4" [duration]="2000"></animated-digit><br/>
+    No.of Users
+    </div>
+    <div class="col-md-3">
+      <animated-digit [digit]= "count1" [duration]="1000"></animated-digit><br/>
+      E-Books
+      </div>
+      <div class="col-md-3">
+        <animated-digit [digit]= "count2" [duration]="1000"></animated-digit><br/>
+        Files Uploaded
+        </div>
+        <div class="col-md-3">
+          <animated-digit [digit]= "count3" [duration]="1000"></animated-digit><br/>
+          Interview Questions
+          </div>
+    
+    </div> -->
+ 
+<script type="text/javascript">
+  $(".num").counterUp({delay:10,time:1000});
+  </script>

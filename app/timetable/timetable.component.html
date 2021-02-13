@@ -1,0 +1,103 @@
+<!--POPUP-->
+    <div class="modal" id="editPopup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Update</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                </div>
+                <div class="modal-body">
+                    <form class="form-group">
+                        Enter Event: <input type="text" name="event" [(ngModel)]="updateObj.event" class="form-control"><br/>
+                        Enter Date: <input type="date" name="date" [(ngModel)]="updateObj.date" class="form-control"><br/>
+                        Enter Time: <input type="time" name="time" [(ngModel)]="updateObj.time" class="form-control"><br/>
+                        
+                        
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" (click)="updateTask()" class="close" data-dismiss="modal" class="btn btn-succes">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="col-sm-3">
+  
+  <app-main></app-main></div>
+<br/>
+<br/><br/>
+
+<div class="col-sm-9" style="margin-left: 300px; margin-top: 0px;">
+<div class="container" id="container">
+  <div class="form-container sign-in-container">
+    <form #TaskForm="ngForm">
+      <h1>Make Your Day</h1>
+      <input type="text"[(ngModel)]="tasks.event" name="event" placeholder="Event" />
+            <input type="date" [(ngModel)]="tasks.date" placeholder="Date" name="date" />
+            <input type="time" [(ngModel)]="tasks.time" name="time" placeholder="Time" />
+      <button (click)="addToList()">Add Task</button>
+    </form>
+  </div>
+   <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <button class="ghost" id="signIn">Sign In</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <p><img class=" img-fluid" src="./assets/images/tasks.jpg" height="100%" width="200%" alt="card image"></p>
+        <!-- <h1>Your Tasks</h1> -->
+        <!-- <div *ngIf="displayTasks.length > 0">
+        <table style="width:500px;">
+            <thead>
+                <tr class="bg-info text-white">
+                    <th>EVENT</th>
+                    <th>DATE</th>
+                    <th>TIME</th>
+                    <th>EDIT</th>
+                    <th>DELETE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let task of displayTasks'>
+                    <td>{{task.event}}</td>
+                    <td>{{task.date}}</td>
+                    <td>{{task.time }}</td>
+                    <td>{{employee.doj | exp }}</td>
+                    <td><button class="buttoned" (click)="editTask(task)" class="#editPopup" class="fa fa-edit"></button></td>
+                    <td><button class="buttoned" (click)="deleteTask(task)" class="fa fa-trash"></button></td>
+                </tr>
+            </tbody>
+  </table> -->
+<!-- </div> -->
+</div>
+</div>
+</div> 
+</div>
+<br/><br/>
+<h1 style="margin-left: 400px;">Your Tasks</h1>
+         <div *ngIf="displayTasks.length > 0">
+          
+        <table style="width:1000px;" >
+            <thead>
+                <tr class="bg-info text-white">
+                    <th>EVENT</th>
+                    <th>DATE</th>
+                    <th>TIME</th>
+                    <th>EDIT</th>
+                    <th>DELETE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let task of displayTasks'>
+                    <td>{{task.event}}</td>
+                    <td>{{task.date}}</td>
+                    <td>{{task.time }}</td>
+                    <!-- <td>{{employee.doj | exp }}</td> -->
+                    <td><button class="buttoned" (click)="editTask(task)" class="#editPopup" class="fa fa-edit"></button></td>
+                    <td><button class="buttoned" (click)="deleteTask(task)" class="fa fa-trash"></button></td>
+                </tr>
+            </tbody>
+  </table>
+</div>
+</div>

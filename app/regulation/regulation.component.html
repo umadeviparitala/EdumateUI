@@ -1,0 +1,51 @@
+<app-main></app-main>
+<div class="container">
+  
+     <div class="row">
+        <br/>
+        <div class="col-md-3"></div>
+        <div class="col-md-4 col-sm-6 col-12 id" style="margin-left: 350px;margin-top: 30px;">
+
+    <form  class="form-group" (ngSubmit)="OnSubmit(18)">
+        <button type="submit" class="btn btn-primary" style="width: 250px; height: 70px;">r18</button>
+        
+    </form>
+        &nbsp;&nbsp;&nbsp;
+        <form  class="form-group" (ngSubmit)="OnSubmit(16)" >
+          <button type="submit" class="btn btn-primary" style="width: 250px; height: 70px;">r16</button>
+          </form>
+        </div> 
+        <div class="col-md-4 col-sm-6 col-12 id" style="margin-left: 320px;">
+        <div *ngIf="products.length > 0">
+        <table style="width:1000px;" >
+          <thead>
+              <tr class="bg-info text-white">
+                  <th>REG TYPE</th>
+                  <th>NAME</th>
+                  <th>PDF LINK</th>
+                  <!-- <th>EDIT</th>
+                  <th>DELETE</th> -->
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor='let product of products'>
+                   <td>R{{product.itemName}}</td> 
+                  <td>{{product.itemImage}}</td>
+                  <td><a target="_blank" href="http://localhost:8080/Edumate_RESTAPI/image/{{product.itemImage}}">{{x}}</a></td>
+                  <!-- <td>{{employee.doj | exp }}</td> -->
+                  <!-- <td><button class="buttoned" (click)="editTask(task)" class="#editPopup" class="fa fa-edit"></button></td>
+                  <td><button class="buttoned" (click)="deleteTask(task)" class="fa fa-trash"></button></td> -->
+              </tr>
+          </tbody>
+</table>
+</div>
+</div>
+      <!-- <div class="col-md-10" style="float: right; margin-left: 400px;">
+         <h3>ID: {{products[0].itemId}}</h3>
+    <h3>SEM TYPE: {{y}}{{products[0].itemName}}</h3>
+    <h3>PDF NAME: {{products[0].itemImage}}</h3>
+    <img class="card-img-top" src="http://localhost:8080/RESTAPI_HomeGardening/image/{{products[0].itemImage}}" alt="Card image cap" />
+     <a target="_blank" href="http://localhost:8080/Edumate_RESTAPI/image/{{products[0].itemImage}}">{{x}}</a></div>
+    <iframe src="http://localhost:8080/RESTAPI_HomeGardening/image/{{products[0].itemImage}}" width="100%" height="500px"></iframe> -->
+    </div>
+</div>

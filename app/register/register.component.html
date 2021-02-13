@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <form method="POST" class="appointment-form" id="appointment-form">
+                <h2>registration form</h2>
+                <form #registerForm="ngForm" (ngSubmit)="register()">
+                    <!-- <input type="number" name="regdNo" [(ngModel)]='student.regdNo' placeholder="Enter RegdNo:"> -->
+                    <input type="text" name="firstName" [(ngModel)]='student.firstName' placeholder="Enter FirstName" required>
+                    <input type="text" name="lastName" [(ngModel)]='student.lastName'placeholder = "Enter LastName" required>
+                    <input type="email" name="emailId" [(ngModel)]='student.emailId' placeholder="Enter EmailId" required><br/>
+                    <input type="password" name="password" [(ngModel)]='student.password'placeholder = "Enter Password" required><br/> 
+                    <label style="color: #8781A8">Select Year Of Study</label>
+                    <select name="yearOfStudy" [(ngModel)]='student.yearOfStudy' required>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select><br/>
+                 <button class="btn btn-primary">Register</button><br/>
+                </form>
+                <br/>
+                <!-- <label style="color: black;">Already SignUp:    </label>&nbsp;&nbsp;
+                <a style="font-size: medium;" routerLink="login">Login</a> -->
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

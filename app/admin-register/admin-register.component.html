@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <form method="POST" class="appointment-form" id="appointment-form">
+                <h2>registration form</h2>
+                <form #registerForm="ngForm" (ngSubmit)="register()">
+                    <input type="number" name="organizerId" [(ngModel)]='organizer.organizerId' placeholder="Enter RegdNo:">
+                    <input type="text" name="organizerName" [(ngModel)]='organizer.organizerName' placeholder="Enter Name">
+                    <input type="email" name="organizerEmail" [(ngModel)]='organizer.organizerEmail' placeholder="Enter EmailId"><br/>
+                    <input type="password" name="organizerPassword" [(ngModel)]='organizer.organizerPassword'placeholder = "Enter Password"><br/> 
+                    
+                 <button class="btn btn-primary">Register</button><br/>
+                </form>
+                <br/>
+                <label style="color: black;">Already SignUp:    </label>&nbsp;&nbsp;
+                <a style="font-size: medium;" routerLink="login">Login</a>
+
+                
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
